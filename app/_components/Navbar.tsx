@@ -14,30 +14,34 @@ export default function Navbar() {
         <Link href="/about" className="hover:text-white">About Us</Link>
 
         <div className="relative group">
-          
-          
-          <Link href="/services" className="hover:text-white flex items-center gap-1">
-            Services ▾
-          </Link>
+  <Link href="/services" className="hover:text-white flex items-center gap-1">
+    Services ▾
+  </Link>
 
-       
-          <div className="absolute top-full left-0 mt-2 w-44 bg-[var(--surface)] text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-            
-            <Link href="/services/service1" className="block px-4 py-2 hover:bg-gray-100">
-              Service 1
-            </Link>
-            <Link href="/services/service2" className="block px-4 py-2 hover:bg-gray-100">
-              Service 2
-            </Link>
-            <Link href="/services/service3" className="block px-4 py-2 hover:bg-gray-100">
-              Service 3
-            </Link>
-            <Link href="/services/service4" className="block px-4 py-2 hover:bg-gray-100">
-              Service 4
-            </Link>
-
-          </div>
-        </div>
+  <div className="absolute top-full left-0 pt-2">
+    <div className="
+      w-44
+      bg-[var(--surface)]
+      text-black
+      rounded-lg
+      shadow-lg
+      opacity-0 invisible
+      group-hover:opacity-100 group-hover:visible
+      transition-all duration-200 
+      overflow-hidden
+    ">
+      {["1","2","3","4"].map((n) => (
+        <Link
+          key={n}
+          href={`/services/service${n}`}
+          className="block px-4 py-2 hover:bg-gray-100 whitespace-nowrap"
+        >
+          Service {n}
+        </Link>
+      ))}
+    </div>
+  </div>
+</div>
 
         <Link href="/contact" className="hover:text-white">Contact Us</Link>
       </div>
