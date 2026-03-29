@@ -1,0 +1,64 @@
+/* Concept 2 — Conversion Lab */
+/* Usage: add data-theme="c2-dark" or data-theme="c2-light" to the <main> element */
+
+[data-theme="c2-dark"] {
+  /* Page */
+  --c2-bg:              #09111f;
+  --c2-bg-grad-from:    #0d1626;
+  --c2-bg-grad-to:      #060a12;
+  --c2-grid-line:       rgba(255, 255, 255, 0.06);
+
+  /* Card surfaces */
+  --c2-card-bg:         #0b1524;
+  --c2-surface:         rgba(255, 255, 255, 0.03);
+  --c2-surface-2:       rgba(255, 255, 255, 0.04);
+
+  /* Accent */
+  --c2-accent:          #8bfac7;
+  --c2-accent-on:       #07111d;
+  --c2-accent-border:   rgba(139, 250, 199, 0.25);
+  --c2-accent-border-subtle: rgba(139, 250, 199, 0.18);
+
+  /* Text */
+  --c2-text:            #eff6ff;
+  --c2-text-78:         rgba(239, 246, 255, 0.78);
+  --c2-text-muted:      rgba(239, 246, 255, 0.68);
+  --c2-text-62:         rgba(239, 246, 255, 0.62);
+  --c2-text-55:         rgba(239, 246, 255, 0.55);
+  --c2-text-dim:        rgba(239, 246, 255, 0.45);
+
+  /* Borders */
+  --c2-border:          rgba(255, 255, 255, 0.10);
+  --c2-border-subtle:   rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="c2-light"] {
+  /* Page */
+  --c2-bg:              #f0f7ff;
+  --c2-bg-grad-from:    #e8f2ff;
+  --c2-bg-grad-to:      #dceeff;
+  --c2-grid-line:       rgba(0, 0, 0, 0.06);
+
+  /* Card surfaces */
+  --c2-card-bg:         #ffffff;
+  --c2-surface:         rgba(0, 0, 0, 0.03);
+  --c2-surface-2:       rgba(0, 0, 0, 0.04);
+
+  /* Accent */
+  --c2-accent:          #00a86b;
+  --c2-accent-on:       #ffffff;
+  --c2-accent-border:   rgba(0, 168, 107, 0.30);
+  --c2-accent-border-subtle: rgba(0, 168, 107, 0.20);
+
+  /* Text */
+  --c2-text:            #0a1929;
+  --c2-text-78:         rgba(10, 25, 41, 0.78);
+  --c2-text-muted:      rgba(10, 25, 41, 0.68);
+  --c2-text-62:         rgba(10, 25, 41, 0.62);
+  --c2-text-55:         rgba(10, 25, 41, 0.55);
+  --c2-text-dim:        rgba(10, 25, 41, 0.45);
+
+  /* Borders */
+  --c2-border:          rgba(0, 0, 0, 0.10);
+  --c2-border-subtle:   rgba(0, 0, 0, 0.12);
+}

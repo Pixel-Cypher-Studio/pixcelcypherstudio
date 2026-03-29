@@ -1,0 +1,78 @@
+/*
+ * Homepage Theme — CSS Custom Properties
+ * =======================================
+ * Usage: set  data-theme="frozen"       on <main> for light mode  (current default)
+ *             data-theme="frozen-dark"  on <main> for dark  mode
+ *
+ * Every color used across Hero.tsx and Services.tsx is defined here.
+ * To change a color globally, edit it once in the relevant block below.
+ *
+ * Token naming:
+ *   --hp-<section>-<role>
+ *   --hp-*  without a section prefix = shared across all sections
+ */
+
+/* ─── LIGHT MODE ──────────────────────────────────────────────── */
+[data-theme="frozen"] {
+
+  /* Shared page */
+  --hp-bg:                  #f4efe4;         /* body / section background     */
+  --hp-text:                #111111;         /* default body text             */
+
+  /* Surfaces & cards */
+  --surface:                #fffafa;         /* Services card bg (snow)       */
+  --hp-card-bg:             #fffafa;         /* alias — use either            */
+  --hp-card-title:          #111111;         /* card heading                  */
+  --hp-card-body:           #4b5563;         /* card description (gray-600)   */
+  --hp-card-shadow:         rgba(0, 0, 0, 0.10);
+
+  /* Brand palette */
+  --hp-ice-dark:            #6d8196;         /* iceDark — used as btn text    */
+  --hp-ice-light:           #add8e6;         /* iceLight                      */
+  --hp-deep-water:          #000080;         /* deepWater — used as btn bg    */
+  --hp-snow:                #fffafa;         /* snow                          */
+
+  /* Hero section */
+  --hp-hero-overlay:        rgba(0, 0, 0, 0.50);   /* video dim overlay       */
+  --hp-hero-heading:        #ffffff;                /* "Stream. Create. …"     */
+  --hp-hero-body:           rgba(255, 255, 255, 0.80); /* subheading copy      */
+  --hp-hero-btn-bg:         #000080;                /* CTA button fill         */
+  --hp-hero-btn-text:       #6d8196;                /* CTA button label        */
+  --hp-hero-btn-bg-hover:   #0000a0;               /* CTA hover state         */
+
+  /* Services section */
+  --hp-services-heading:    #111111;         /* "Our Services" h2             */
+}
+
+
+/* ─── DARK MODE ───────────────────────────────────────────────── */
+[data-theme="frozen-dark"] {
+
+  /* Shared page */
+  --hp-bg:                  #0d1117;
+  --hp-text:                #e8edf3;
+
+  /* Surfaces & cards */
+  --surface:                rgba(255, 255, 255, 0.06);
+  --hp-card-bg:             rgba(255, 255, 255, 0.06);
+  --hp-card-title:          #e8edf3;
+  --hp-card-body:           rgba(232, 237, 243, 0.55);
+  --hp-card-shadow:         rgba(0, 0, 0, 0.40);
+
+  /* Brand palette — inverted / adjusted for dark backgrounds */
+  --hp-ice-dark:            #93b4cc;         /* lightened for contrast        */
+  --hp-ice-light:           #add8e6;         /* unchanged                     */
+  --hp-deep-water:          #4d7fa8;         /* desaturated, readable on dark */
+  --hp-snow:                #1a2130;         /* "snow" surface in dark mode   */
+
+  /* Hero section */
+  --hp-hero-overlay:        rgba(0, 0, 0, 0.65);
+  --hp-hero-heading:        #ffffff;
+  --hp-hero-body:           rgba(255, 255, 255, 0.65);
+  --hp-hero-btn-bg:         #4d7fa8;
+  --hp-hero-btn-text:       #ffffff;
+  --hp-hero-btn-bg-hover:   #5b92bf;
+
+  /* Services section */
+  --hp-services-heading:    #e8edf3;
+}
