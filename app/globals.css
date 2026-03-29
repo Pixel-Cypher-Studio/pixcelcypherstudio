@@ -5,6 +5,22 @@
   --foreground: #111111;
 }
 
+/* homepage theme */
+[data-theme="frozen"] {
+  --background: #f4efe4;
+  --foreground: #111111;
+
+  --color-ice-dark: #6d8196;
+  --color-ice-light: #add8e6;
+  --color-snow: #fffafa;
+  --color-deep-water: #000080;
+
+  --primary: var(--color-ice-dark);
+  --secondary: var(--color-ice-light);
+  --accent: var(--color-deep-water);
+  --surface: var(--color-snow);
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -103,8 +119,17 @@ a {
   inset: 0;
   pointer-events: none;
   opacity: 0.08;
-  background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.7) 0, transparent 30%),
-    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.4) 0, transparent 24%),
+  background-image:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(255, 255, 255, 0.7) 0,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(255, 255, 255, 0.4) 0,
+      transparent 24%
+    ),
     radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.18) 0, transparent 25%);
   mix-blend-mode: soft-light;
 }
@@ -123,4 +148,13 @@ a {
 
 @utility animate-marquee {
   animation: marquee 22s linear infinite;
+}
+
+/* hiding scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
