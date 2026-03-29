@@ -7,7 +7,9 @@ import {
   Space_Grotesk,
 } from "next/font/google";
 import "./globals.css";
+import "./_components/homepage/theme.css";
 import LoaderWrapper from "@/app/_components/LoadWrapper"; 
+import { Footer } from "./_components/footer";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -51,11 +53,14 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} ${spaceGrotesk.variable} ${cormorant.variable} ${bricolage.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-black">
+        
         <LoaderWrapper>
           {children}
         </LoaderWrapper>
-        </body>
+        
+        <Footer />
+      </body>
     </html>
   );
 }

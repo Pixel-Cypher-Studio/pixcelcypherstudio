@@ -50,8 +50,8 @@ container.addEventListener("touchend", resume);
   }, []);
 
   return (
-    <section className="py-16 px-6">
-      <h2 className="text-3xl font-bold mb-8">Our Services</h2>
+    <section className="py-16 px-6" style={{ background: "var(--hp-bg)" }}>
+      <h2 className="text-3xl font-bold mb-8" style={{ color: "var(--hp-services-heading)" }}>Our Services</h2>
 
       <div
         ref={scrollRef}
@@ -61,24 +61,16 @@ container.addEventListener("touchend", resume);
         {[...services, ...services].map((service, index) => (
           <div
             key={index}
-            className="snap-center
-          flex-shrink-0
-          w-[280px] 
-          first:ml-[calc(50%-140px)]
-          last:mr-[calc(50%-140px)]
-          sm:w-[320px] md:w-[360px]
-          bg-[var(--surface)]
-          text-black
-          rounded-2xl
-          p-6
-          shadow-lg
-          transition-transform duration-300
-          hover:scale-105"
+            className="snap-center shrink-0 w-70 first:ml-[calc(50%-140px)] last:mr-[calc(50%-140px)] sm:w-[320px] md:w-90 rounded-2xl p-6 shadow-lg transition-transform duration-300 hover:scale-105"
+          style={{
+            background: "var(--hp-card-bg)",
+            boxShadow: "0 4px 24px var(--hp-card-shadow)",
+          }}
           >
-            <h3 className="text-lg font-semibold mb-2">
+            <h3 className="text-lg font-semibold mb-2" style={{ color: "var(--hp-card-title)" }}>
               {service.name}
             </h3>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm" style={{ color: "var(--hp-card-body)" }}>
               {service.description}
             </p>
           </div>

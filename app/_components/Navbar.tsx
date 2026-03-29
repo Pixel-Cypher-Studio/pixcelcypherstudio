@@ -4,9 +4,12 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-[rgba(0,0,0,0.6)] border-b border-gray-800 px-8 py-4 flex justify-between items-center">
+    <nav className="backdrop-blur-md  border-b border-gray-800 px-8 py-4 flex justify-between items-center">
       
-      <h1 className="text-xl font-bold text-white">PixelCypher</h1>
+      <Link href="/" className="transition">
+          <img src="/assets/images/pixelcypherstudio.jpeg"
+            alt="PixelCypherStudio Logo" className="h-10"/>
+      </Link>
 
       <div className="flex items-center space-x-8 text-sm text-gray-300">
 
@@ -14,7 +17,7 @@ export default function Navbar() {
         <Link href="/about" className="hover:text-white">About Us</Link>
 
         <div className="relative group">
-  <Link href="/services" className="hover:text-white flex items-center gap-1">
+  <Link href="/showcase" className="hover:text-white flex items-center gap-1">
     Services ▾
   </Link>
 
@@ -23,7 +26,7 @@ export default function Navbar() {
       w-44
       bg-[var(--surface)]
       text-black
-      rounded-lg
+      rounded-lg  
       shadow-lg
       opacity-0 invisible
       group-hover:opacity-100 group-hover:visible
@@ -33,7 +36,7 @@ export default function Navbar() {
       {["1","2","3","4"].map((n) => (
         <Link
           key={n}
-          href={`/services/service${n}`}
+          href={`/showcase/${n}`}
           className="block px-4 py-2 hover:bg-gray-100 whitespace-nowrap"
         >
           Service {n}

@@ -6,7 +6,7 @@ import Services from "./_components/homepage/Services";
 
 export default function Home() {
   return (
-    <>  <main data-theme="frozen" className="" >
+    <>  <main data-theme="frozen" className="bg-black" >
       
     
       <Navbar />
