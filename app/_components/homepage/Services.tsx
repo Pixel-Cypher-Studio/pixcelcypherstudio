@@ -55,13 +55,25 @@ container.addEventListener("touchend", resume);
 
       <div
         ref={scrollRef}
-        className="flex gap-6 overflow-x-hidden"
+        className="flex gap-6 overflow-x-auto scrollbar-hide "
       >
         {/* duplicate array for seamless loop */}
         {[...services, ...services].map((service, index) => (
           <div
             key={index}
-            className="min-w-[280px] bg-[var(--surface)] text-black rounded-xl p-6 shadow-lg flex-shrink-0"
+            className="snap-center
+          flex-shrink-0
+          w-[280px] 
+          first:ml-[calc(50%-140px)]
+          last:mr-[calc(50%-140px)]
+          sm:w-[320px] md:w-[360px]
+          bg-[var(--surface)]
+          text-black
+          rounded-2xl
+          p-6
+          shadow-lg
+          transition-transform duration-300
+          hover:scale-105"
           >
             <h3 className="text-lg font-semibold mb-2">
               {service.name}
