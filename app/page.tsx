@@ -6,14 +6,13 @@ import Services from "./_components/homepage/Services";
 
 export default function Home() {
   return (
-    <>  <main data-theme="frozen" className="bg-black" >
-      
-    
-      <Navbar />
-      <Hero />
-      <Services />
-    </main>
-  
+    <>
+      <main data-theme="frozen" className="min-h-screen" style={{ background: "var(--hp-bg)" }}>
+        <Navbar />
+        <Hero />
+        <Services />
+      </main>
+
       {/* <Footer /> */}
     </>
   );

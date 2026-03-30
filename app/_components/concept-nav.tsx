@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { concepts } from "../_lib/concepts";
+import { services } from "../_lib/services";
 
 type ConceptNavProps = {
   current: string;
@@ -15,7 +15,7 @@ export function ConceptNav({ current, invert = false }: ConceptNavProps) {
       <Link href="/" className="rounded-full border px-4 py-2 transition hover:-translate-y-0.5">
         Index
       </Link>
-      {concepts.map((concept) => {
+      {services.map((concept) => {
         const active = concept.id === current;
 
         return (
