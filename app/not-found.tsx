@@ -10,14 +10,14 @@ export default function NotFound() {
         className="w-full max-w-2xl rounded-[2rem] border border-black/10 bg-[var(--hp-card-bg)] px-8 py-14 text-center shadow-[0_24px_80px_rgba(0,0,0,0.08)]"
       >
         <p className="font-mono-ui text-sm uppercase tracking-[0.24em] text-black/45">
-          404
+        ⚡ Work in progress
         </p>
 
-        <h1 className="mt-4 text-4xl font-bold text-[var(--hp-card-title)]">
+        <h1 className="mt-4 text-4xl font-bold text-[var(--hp-card-title)] text-black">
           This page is under development
         </h1>
 
-        <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-[var(--hp-card-body)]">
+        <p className="mx-auto mt-4 max-w-xl text-base text-black leading-7 text-[var(--hp-card-body)]">
           The page you requested is not available yet. Please return to the homepage
           and continue exploring the studio.
         </p>

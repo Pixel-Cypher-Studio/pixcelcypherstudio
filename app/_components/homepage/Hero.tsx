@@ -19,8 +19,8 @@ export default function Hero() {
         <p className="max-w-xl mb-8" style={{ color: "var(--hp-hero-body)" }}>
           PixelCypher Studio delivers high-performance video streaming powered by AWS CloudFront.
         </p>
-        <button
-          className="px-6 py-3 rounded-full font-medium hover:scale-105 transition"
+              <button
+          className="rounded-full px-6 py-3 font-medium transition duration-200 hover:scale-105 active:scale-[0.97] active:brightness-110 active:shadow-[0_0_0_1px_rgba(255,255,255,0.14),0_14px_32px_rgba(0,0,128,0.32)]"
           style={{ background: "var(--hp-hero-btn-bg)", color: "var(--hp-hero-btn-text)" }}
         >
           Explore Content
