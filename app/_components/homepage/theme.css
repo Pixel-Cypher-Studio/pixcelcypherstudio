@@ -1,0 +1,91 @@
+/*
+ * Homepage Theme — CSS Custom Properties
+ * =======================================
+ * Usage: set  data-theme="frozen"       on <main> for light mode  (current default)
+ *             data-theme="frozen-dark"  on <main> for dark  mode
+ *
+ * Every color used across Hero.tsx and Services.tsx is defined here.
+ * To change a color globally, edit it once in the relevant block below.
+ *
+ * Token naming:
+ *   --hp-<section>-<role>
+ *   --hp-*  without a section prefix = shared across all sections
+ */
+
+/* ─── LIGHT MODE ──────────────────────────────────────────────── */
+[data-theme="frozen"] {
+  /* Shared page */
+  --hp-bg: linear-gradient(180deg, #06143f 0%, #0c235d 36%, #6d8196 100%);
+  --hp-text: #fffafa;
+
+  /* Surfaces & cards */
+  --surface: rgba(255, 250, 250, 0.08);
+  --hp-card-bg: rgba(255, 250, 250, 0.1);
+  --hp-card-title: #fffafa;
+  --hp-card-body: rgba(255, 250, 250, 0.78);
+  --hp-card-shadow: rgba(0, 0, 64, 0.3);
+
+  /* Brand palette */
+  --hp-ice-dark: #6d8196;
+  --hp-ice-light: #add8e6;
+  --hp-deep-water: #000080;
+  --hp-snow: #fffafa;
+
+  /* Navbar */
+  --hp-nav-bg: rgba(7, 18, 58, 0.72);
+  --hp-nav-border: rgba(173, 216, 230, 0.18);
+  --hp-nav-text: rgba(255, 250, 250, 0.84);
+  --hp-nav-hover: rgba(173, 216, 230, 0.12);
+  --hp-nav-dropdown-bg: rgba(8, 20, 63, 0.96);
+
+  /* Hero section */
+  --hp-hero-overlay: linear-gradient(
+    180deg,
+    rgba(0, 0, 128, 0.62) 0%,
+    rgba(7, 18, 58, 0.38) 45%,
+    rgba(6, 14, 38, 0.76) 100%
+  );
+  --hp-hero-heading: #fffafa;
+  --hp-hero-body: rgba(255, 250, 250, 0.82);
+  --hp-hero-btn-bg: #000080;
+  --hp-hero-btn-text: #fffafa;
+  --hp-hero-btn-bg-hover: #102c97;
+
+  /* Services section */
+  --hp-services-heading: #fffafa;
+
+  /* Footer */
+  --hp-footer-bg: rgba(6, 14, 38, 0.92);
+  --hp-footer-border: rgba(173, 216, 230, 0.14);
+}
+
+/* ─── DARK MODE ───────────────────────────────────────────────── */
+[data-theme="frozen-dark"] {
+  /* Shared page */
+  --hp-bg: #0d1117;
+  --hp-text: #e8edf3;
+
+  /* Surfaces & cards */
+  --surface: rgba(255, 255, 255, 0.06);
+  --hp-card-bg: rgba(255, 255, 255, 0.06);
+  --hp-card-title: #e8edf3;
+  --hp-card-body: rgba(232, 237, 243, 0.55);
+  --hp-card-shadow: rgba(0, 0, 0, 0.4);
+
+  /* Brand palette — inverted / adjusted for dark backgrounds */
+  --hp-ice-dark: #93b4cc; /* lightened for contrast        */
+  --hp-ice-light: #add8e6; /* unchanged                     */
+  --hp-deep-water: #4d7fa8; /* desaturated, readable on dark */
+  --hp-snow: #1a2130; /* "snow" surface in dark mode   */
+
+  /* Hero section */
+  --hp-hero-overlay: rgba(0, 0, 0, 0.65);
+  --hp-hero-heading: #ffffff;
+  --hp-hero-body: rgba(255, 255, 255, 0.65);
+  --hp-hero-btn-bg: #4d7fa8;
+  --hp-hero-btn-text: #ffffff;
+  --hp-hero-btn-bg-hover: #5b92bf;
+
+  /* Services section */
+  --hp-services-heading: #e8edf3;
+}

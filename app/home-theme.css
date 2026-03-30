@@ -1,0 +1,56 @@
+/* Home page theme tokens */
+/* Usage: add data-theme="home-light" or data-theme="home-dark" to the <main> element */
+
+[data-theme="home-light"] {
+  /* Page */
+  --home-bg:            #efe6d6;
+  --home-bg-grad-from:  #fff8ed;
+
+  /* Text */
+  --home-text:          #181512;
+  --home-text-68:       rgba(24, 21, 18, 0.68);
+  --home-text-65:       rgba(24, 21, 18, 0.65);
+  --home-text-60:       rgba(24, 21, 18, 0.60);
+  --home-text-58:       rgba(24, 21, 18, 0.58);
+  --home-text-55:       rgba(24, 21, 18, 0.55);
+  --home-text-45:       rgba(24, 21, 18, 0.45);
+
+  /* Borders */
+  --home-border:        rgba(0, 0, 0, 0.10);
+
+  /* Surfaces */
+  --home-surface:       rgba(255, 255, 255, 0.55);
+  --home-card:          rgba(255, 255, 255, 0.72);
+
+  /* Stat pill (the "5 routes" card) */
+  --home-stat-bg:       #181512;
+  --home-stat-text:     #ffffff;
+  --home-stat-text-dim: rgba(255, 255, 255, 0.60);
+}
+
+[data-theme="home-dark"] {
+  /* Page */
+  --home-bg:            #1c1710;
+  --home-bg-grad-from:  #251f16;
+
+  /* Text */
+  --home-text:          #f0e8d5;
+  --home-text-68:       rgba(240, 232, 213, 0.68);
+  --home-text-65:       rgba(240, 232, 213, 0.65);
+  --home-text-60:       rgba(240, 232, 213, 0.60);
+  --home-text-58:       rgba(240, 232, 213, 0.58);
+  --home-text-55:       rgba(240, 232, 213, 0.55);
+  --home-text-45:       rgba(240, 232, 213, 0.45);
+
+  /* Borders */
+  --home-border:        rgba(255, 255, 255, 0.10);
+
+  /* Surfaces */
+  --home-surface:       rgba(255, 255, 255, 0.05);
+  --home-card:          rgba(255, 255, 255, 0.07);
+
+  /* Stat pill */
+  --home-stat-bg:       rgba(255, 255, 255, 0.12);
+  --home-stat-text:     #f0e8d5;
+  --home-stat-text-dim: rgba(240, 232, 213, 0.60);
+}
