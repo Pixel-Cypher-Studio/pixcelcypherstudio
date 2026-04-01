@@ -41,6 +41,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "PixelCypherStudio Showcase",
   description: "Five distinct homepage directions for PixelCypherStudio.",
+  
 };
 
 export default function RootLayout({
